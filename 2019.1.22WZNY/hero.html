@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>王者荣耀官方网站-腾讯游戏</title>
+    <link rel="stylesheet" href="less/hero.css">
+    <link rel="shortcut icon" href="img/hero/166.jpg">
+    <script src="js/jquery-3.3.1.js"></script>
+</head>
+<body>
+<div id="header"></div>
+<div class="wrapper">
+    <div class="info-box">
+        <div class="box_left">
+            <p>
+                <b>
+                    周免英雄（<span>1月28日-2月3日</span>）
+                </b>
+            </p>
+            <ul id="list-img">
+                <li class="act"></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+            <a href="#">
+                更<br>
+                多<br>
+                英<br>
+                雄
+            </a>
+        </div>
+        <div class="box_right">
+            <a href="#">
+                <img src="img/avatar1.jpg" alt="" width="75" height="75">
+                <span>0</span>
+            </a>
+            <div>
+                <p>亲爱的召唤师，欢迎 <a href="">登录</a></p>
+            </div>
+        </div>
+    </div>
+     <div class="zkcontent">
+         <div class="zk-con-box">
+            <div class="zk-con">
+                <div class="con1-pos">
+                    <i></i>
+                    <a href="">王者荣耀首页</a>
+                    <span>></span>
+                    <label>英雄介绍</label>
+                </div>
+                <h1>英雄介绍</h1>
+                <ul id="choice">
+                    <li class="current">
+                        <a >英雄</a>
+                    </li>
+                    <li>
+                        <a >局内道具</a>
+                    </li>
+                    <li>
+                        <a >召唤师技能</a>
+                    </li>
+                </ul>
+            </div>
+             <div class="herolist-box" >
+                <div class="clearfix item-types">
+                    <ul class="types-left">
+                        <li>综合</li>
+                        <li>定位</li>
+                    </ul>
+                    <ul class="types-ms" id="typs">
+                        <li>
+                            <span>
+                                <i></i>
+                            </span>
+                            <label>本周免费</label>
+                        </li>
+                        <li>
+                            <span>
+                                <i></i>
+                            </span>
+                            <label>新手推荐</label>
+                        </li>
+                    </ul>
+                    <ul class="types-ms" id="types-ms">
+                        <li class="current">
+                            <span>
+                                <i></i>
+                            </span>
+                            <label>全部</label>
+                        </li>
+                        <li>
+                            <span>
+                                <i></i>
+                            </span>
+                            <label>坦克</label>
+                        </li>
+                        <li>
+                            <span>
+                                <i></i>
+                            </span>
+                            <label>战士</label>
+                        </li>
+                        <li>
+                            <span>
+                                <i></i>
+                            </span>
+                            <label>刺客</label>
+                        </li>
+                        <li>
+                            <span>
+                                <i></i>
+                            </span>
+                            <label>法师</label>
+                        </li>
+                        <li>
+                            <span>
+                                <i></i>
+                            </span>
+                            <label>射手</label>
+                        </li>
+                        <li>
+                            <span>
+                                <i></i>
+                            </span>
+                            <label>辅助</label>
+                        </li>
+                    </ul>
+                    <div class="herosearch">
+                        <input type="text" id="search" name="search" class="herosearch-input"
+                               placeholder="请输入你想要搜索的英雄名">
+                        <a href="javascript:void(0);" class="herosearch-icon"
+                           title="点击搜索" id="searchBtn"></a>
+                    </div>
+                </div>
+                 <div class="clearfix">
+                     <ul class="clearfix types-ms parent-type">
+                         <li class="current" data-type="0">
+                             <span class="ms-radio"><i class="i"></i></span>
+                             <label>常规模式</label>
+                         </li>
+                         <li data-type="1">
+                             <span class="ms-radio"><i class="i"></i></span>
+                             <label>边境突围模式</label>
+                         </li>
+                     </ul>
+                     <ul class="clearfix types-ms sub-type">
+                         <li class="current" data-type="0" data-parent-type="0" style="display: block;">
+                             <span class="ms-radio"><i class="i"></i></span>
+                             <label>全部</label>
+                         </li>
+                         <li class="current" data-type="0" data-parent-type="1" style="display: none;">
+                             <span class="ms-radio"><i class="i"></i></span>
+                             <label>全部</label>
+                         </li>
+                         <li data-type="1" data-parent-type="0" style="display: block;">
+                             <span class="ms-radio"><i class="i"></i></span>
+                             <label>攻击</label>
+                         </li>
+                         <li data-type="2" data-parent-type="0" style="display: block;">
+                             <span class="ms-radio"><i class="i"></i></span>
+                             <label>法术</label>
+                         </li>
+                         <li data-type="3" data-parent-type="0" style="display: block;">
+                             <span class="ms-radio"><i class="i"></i></span>
+                             <label>防御</label>
+                         </li>
+                         <li data-type="4" data-parent-type="0" style="display: block;">
+                             <span class="ms-radio"><i class="i"></i></span>
+                             <label>移动</label>
+                         </li>
+                         <li data-type="5" data-parent-type="0" style="display: block;" class="">
+                             <span class="ms-radio"><i class="i"></i></span>
+                             <label>打野</label>
+                         </li>
+                         <li data-type="7" data-parent-type="0" style="display: block;">
+                             <span class="ms-radio"><i class="i"></i></span>
+                             <label>辅助</label>
+                         </li>
+                         <li data-type="1" data-parent-type="1" style="display: none;">
+                             <span class="ms-radio"><i class="i"></i></span>
+                             <label>装备</label>
+                         </li>
+                         <li data-type="2" data-parent-type="1" style="display: none;">
+                             <span class="ms-radio"><i class="i"></i></span>
+                             <label>道具</label>
+                         </li>
+                         <li data-type="3" data-parent-type="1" style="display: none;">
+                             <span class="ms-radio"><i class="i"></i></span>
+                             <label>额外技能</label>
+                         </li>
+                     </ul>
+                     <div class="herosearch itemsearch">
+                         <input type="text"  name="search" id="sea"   class="herosearch-input" placeholder="请输入你想要搜索的道具名">
+                         <a href="javascript:void(0);" class="herosearch-icon" ></a>
+                     </div>
+                 </div>
+                 <div class="herolist-content">
+                     <ul id="list_content">
+                         <!--<li>-->
+                             <!--<a href="">-->
+                                 <!--<img src="img/hero/510.jpg" alt="">-->
+                                 <!--猪八戒-->
+                             <!--</a>-->
+                         <!--</li>-->
+                     </ul>
+                 </div>
+             </div>
+             <div class="herolist" style="display: none">
+                 <div class="item-types">
+                     <ul id="skill-list">
+                         <li class="current">
+                             <img src="img/80104.jpg" alt="">
+                             <p>惩击</p>
+                         </li>
+                         <li>
+                             <img src="img/80108.jpg" alt="">
+                             <p>终结</p>
+                         </li>
+                         <li>
+                             <img src="img/80110.jpg" alt="">
+                             <p>狂暴</p>
+                         </li>
+                         <li>
+                             <img src="img/80109.jpg" alt="">
+                             <p>疾跑</p>
+                         </li>
+                         <li>
+                             <img src="img/80102.jpg" alt="">
+                             <p>治疗术</p>
+                         </li>
+                         <li>
+                             <img src="img/80105.jpg" alt="">
+                             <p>干扰</p>
+                         </li>
+                         <li>
+                             <img src="img/80103.jpg" alt="">
+                             <p>晕眩</p>
+                         </li>
+                         <li>
+                             <img src="img/80107.jpg" alt="">
+                             <p>净化</p>
+                         </li>
+                         <li>
+                             <img src="img/80121.jpg" alt="">
+                             <p>弱化</p>
+                         </li>
+                         <li>
+                             <img src="img/80115.jpg" alt="">
+                             <p>闪现</p>
+                         </li>
+                     </ul>
+                     <div id="spellDefail">
+                         <div class="spell-title spell-dis">
+                            <img src="img/80104-big.jpg" alt="">
+                            <h4>惩击</h4>
+                            <p>LV.1解锁</p>
+                            <div>30秒CD：对身边的野怪和小兵造成真实伤害并眩晕1秒</div>
+                        </div>
+                         <div class="spell-title">
+                         <img src="img/80108-big.jpg" alt="">
+                         <h4>终结</h4>
+                         <p>LV.3解锁</p>
+                         <div>90秒CD：立即对身边敌军英雄造成其已损失生命值14%的真实伤害</div>
+                     </div>
+                         <div class="spell-title">
+                             <img src="img/80110-big.jpg" alt="">
+                             <h4>狂暴</h4>
+                             <p>LV.5解锁</p>
+                             <div>60秒CD：增加攻击速度60%，并增加物理攻击力10%持续5秒</div>
+                         </div>
+                         <div class="spell-title">
+                             <img src="img/80109-big.jpg" alt="">
+                             <h4>疾跑</h4>
+                             <p>LV.7解锁</p>
+                             <div>100秒CD：增加30%移动速度持续10秒</div>
+                         </div>
+                         <div class="spell-title">
+                             <img src="img/80102-big.jpg" alt="">
+                             <h4>治疗术</h4>
+                             <p>LV.9解锁</p>
+                             <div>120秒CD：回复自己与附近队友15%生命值，提高附近友军移动速度15%持续2秒</div>
+                         </div>
+                         <div class="spell-title">
+                         <img src="img/80105-big.jpg" alt="">
+                         <h4>干扰</h4>
+                         <p>LV.11解锁</p>
+                         <div>60秒CD：沉默机关持续5秒</div>
+                     </div>
+                         <div class="spell-title">
+                             <img src="img/80103-big.jpg" alt="">
+                             <h4>晕眩</h4>
+                             <p>LV.13解锁</p>
+                             <div>90秒CD：晕眩身边所有敌人0.75秒，并附带持续1秒的减速效果</div>
+                         </div>
+                         <div class="spell-title">
+                             <img src="img/80107-big.jpg" alt="">
+                             <h4>净化</h4>
+                             <p>LV.15解锁</p>
+                             <div>120秒CD：解除自身所有负面和控制效果并免疫控制持续1.5秒</div>
+                         </div>
+                         <div class="spell-title">
+                             <img src="img/80121-big.jpg" alt="">
+                             <h4>弱化</h4>
+                             <p>LV.17解锁</p>
+                             <div>90秒CD：减少身边敌人伤害输出50%持续3秒。</div>
+                         </div>
+                         <div class="spell-title">
+                             <img src="img/80115-big.jpg" alt="">
+                             <h4>闪现</h4>
+                             <p>LV.19解锁</p>
+                             <div>120秒CD：向指定方向位移一段距离</div>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+         </div>
+     </div>
+    <div class="poppup-item">
+        <!--<div>-->
+            <!--<div class="item-title">-->
+                <!--<img src="img/arm/1111.jpg" alt="">-->
+                <!--<div class="cons">-->
+                    <!--<h4>铁剑</h4>-->
+                    <!--<p>售价：150</p>-->
+                    <!--<p>总价：250</p>-->
+                <!--</div>-->
+            <!--</div>-->
+            <!--<div class="item-desc">-->
+                <!--<div id="Jitem-desc1">-->
+                    <!--<p>+20物理攻击</p>-->
+                <!--</div>-->
+                <!--<div id="Jitem-desc2">-->
+                    <!--<p>唯一被动-重伤：造成伤害使得目标的生命恢复效果减少50%）</p>-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</div>-->
+    </div>
+</div>
+<div id="footer"></div>
+
+<script src="js/hero.js"></script>
+<script>
+    $(function () {
+        $("#header").load('header.html');
+        $("#footer").load('footer.html');
+    })
+</script>
+</body>
+</html>

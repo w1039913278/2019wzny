@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+footer {
+  width: 100%;
+  height: 362px;
+  background: url("../img/bg_footer.jpg") no-repeat center 0;
+}
+footer > .footer_content {
+  position: relative;
+  background: none;
+  width: 1200px;
+  padding-top: 80px;
+  font: 12px/20px "微软雅黑", "宋体";
+  min-width: 960px;
+  margin: 0 auto;
+  text-align: left;
+}
+footer > .footer_content > .foot_top {
+  display: block;
+  float: none;
+  height: 66px;
+  padding-bottom: 10px;
+  margin-bottom: 32px;
+  border-bottom: 2px solid #d4d4d4;
+}
+footer > .footer_content > .foot_top > a:nth-child(1) {
+  width: 285px;
+  height: 64px;
+  margin: 0;
+  overflow: hidden;
+  float: left;
+  background: url("../img/spr.png") no-repeat;
+}
+footer > .footer_content > .foot_top > a:nth-child(2) {
+  display: block;
+  width: 70px;
+  height: 64px;
+  margin: 0;
+  overflow: hidden;
+  background: url("../img/spr.png") no-repeat -285px 0;
+}
+footer > .footer_content > .foot_bnt {
+  display: flex;
+  justify-content: space-between;
+}
+footer > .footer_content > .foot_bnt > div:nth-child(1) {
+  position: absolute;
+  left: 0;
+  top: 170px;
+  padding-top: 0;
+  width: 508px;
+  font-size: 12px;
+  color: #666;
+}
+footer > .footer_content > .foot_bnt > div:nth-child(1) > p {
+  margin: 0;
+  font-size: 12px;
+}
+footer > .footer_content > .foot_bnt > div:nth-child(1) > p:nth-child(1) {
+  color: #333;
+  font-weight: bold;
+}
+footer > .footer_content > .foot_bnt > div:nth-child(1) > p:nth-child(3) {
+  margin-top: 6px;
+}
+footer > .footer_content > .foot_bnt > div:nth-child(1) > p:nth-child(4) {
+  position: absolute;
+  left: 550px;
+  top: 106px;
+  width: 300px;
+}
+footer > .footer_content > .foot_bnt > div:nth-child(2) {
+  position: absolute;
+  right: 0;
+  margin: 0;
+  width: 650px;
+}
+footer > .footer_content > .foot_bnt > div:nth-child(2) > p {
+  line-height: 20px;
+  overflow: hidden;
+  margin: 0;
+  font-size: 12px;
+  color: #646467;
+}
+footer > .footer_content > .foot_bnt > div:nth-child(2) > p > span {
+  font-size: 12px;
+  color: #494949;
+}
+footer > .footer_content > .foot_bnt > div:nth-child(2) > p > a {
+  color: #646467;
+  text-decoration: none;
+}
+footer > .footer_content > .foot_bnt > div:nth-child(2) > p > a > img {
+  vertical-align: middle;
+  margin-right: 3px;
+}
+footer > .footer_content > .foot_bnt > div:nth-child(2) > p:nth-child(2) {
+  position: absolute;
+  right: 0;
+  top: 26px;
+}
+footer > .footer_content > .foot_bnt > div:nth-child(2) > p:nth-child(3) {
+  padding-top: 6px;
+}
+/*# sourceMappingURL=footer.css.map */

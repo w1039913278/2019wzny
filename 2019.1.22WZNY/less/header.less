@@ -1,0 +1,256 @@
+*{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+//头部样式
+header{
+  background-color: #fff;
+  color: #464646;
+  border-bottom: 1px solid #c9c9c9;
+  border-top: 1px solid #c9c9c9;
+  width: 100%;
+  height: 40px;
+  position: relative;
+  z-index: 1111;
+  &>div:nth-child(1){
+    width: 100%;
+    height: inherit;
+    &>div{
+      height: inherit;
+      display: flex;
+      width: 970px;
+      margin: 0 auto;
+      justify-content: space-between;
+      &>.head_left{
+        display: flex;
+        &>div:nth-child(1){
+          position: relative;
+          z-index: 11112;
+          cursor: pointer;
+          width: 205px;
+          height: 40px;
+          padding-right: 15px;
+          background:url("../img/game-logo.png") no-repeat;
+          background-size: 100% 40px;
+        }
+        &>div{
+          cursor: pointer;
+        }
+        &>div:nth-child(2){
+          position: relative;
+          &:hover{
+            &>img:nth-child(2){
+              display: block;
+            }
+          }
+          &>img:nth-child(2){
+            display: none;
+            position: absolute;
+            top: 0;
+            left: -220px;
+            border-radius: 2px 2px 2px 2px;
+          }
+        }
+      }
+      &>.head_right{
+        display: flex;
+        &>div:nth-child(1){
+          width: 118px;
+          cursor: pointer;
+          font-size: 12px;
+          font-weight: 400;
+          line-height: 40px;
+          display: flex;
+          align-items: center;
+          &:hover{
+            color: #ff4e00;
+          }
+        }
+        &>div:nth-child(2){
+          font-size: 12px;
+          font-weight: 400;
+          line-height: 40px;
+          cursor: pointer;
+          &:hover{
+            color:  #ff4e00;
+            &>i{
+              background: url("../img/ost-bg.png") -170px -134px;
+            }
+          }
+          &>i{
+            display: inline-block;
+            width: 11px;
+            height: 11px;
+            margin-left: 5px;
+            background: url("../img/ost-bg.png") -150px -134px;
+          }
+        }
+      }
+    }
+  }
+  &>div:nth-child(2){
+    width: 100%;
+    height: 84px;
+    background: rgba(0,0,0,0.8);
+    position: relative;
+    &>.header_inner{
+      &:hover + .header_list{
+        display: block;
+      }
+      cursor: pointer;
+      position: relative;
+      width: 1200px;
+      height: inherit;
+      margin: 0 auto;
+      display: flex;
+      background: url("../img/logo.png") no-repeat left center;
+      &>nav{
+        display: flex;
+        padding-left: 230px;
+        &>ul{
+          display: flex;
+          &>li{
+            text-align: center;
+            &:hover{
+              background: url("../img/index.png") no-repeat;
+            }
+            &>a{
+              text-decoration: none;
+              display: block;
+              width: 110px;
+              height: 64px;
+              padding: 20px 0 0;
+              color: #c9c9dd;
+              font-size: 18px;
+              line-height: 30px;
+              &:hover{
+                color: #e4b653;
+                &>em{
+                  color: #91763f;
+                }
+              }
+              &>em{
+                display: block;
+                padding-top: 5px;
+                font-size: 12px;
+                line-height: 16px;
+                color: #858792;
+                font-style: normal
+              }
+            }
+          }
+        }
+      }
+      &>div{
+        margin-left: 15px;
+        display: flex;
+        align-items: center;
+        &>a{
+          margin-right: 7px;
+          width: 44px;
+          height: 44px;
+          &>img{
+            border: 1px solid #d9ad50;
+            border-radius: 42px;
+          }
+        }
+        &>div{
+          &>a{
+            color: #ffffff;
+            font-size: 16px;
+            text-decoration: none;
+          }
+          &>p{
+            padding-top: 5px;
+            color: #858792;
+            font-size: 14px;
+          }
+        }
+      }
+    }
+    &>.header_list{
+      &:hover{
+        display: block;
+      }
+      display: none;
+      position: absolute;
+      left: 0;
+      top: 84px;
+      width: 100%;
+      height: 240px;
+      padding-top: 15px;
+      padding-bottom: 30px;
+      background: rgba(0,0,0,0.7);
+      z-index: 3;
+      &>ul{
+        width: 970px;
+        height: 240px;
+        padding-left: 230px;
+        margin: 0 auto;
+        overflow: hidden;
+        zoom: 1;
+        display: flex;
+        &>li{
+          float: left;
+          display: inline;
+          width: 100px;
+          padding: 2px 5px 0;
+          text-align: center;
+          white-space: nowrap;
+          &>a{
+            height: 30px;
+            line-height: 30px;
+            display: block;
+            padding: 0;
+            font-size: 14px;
+            color: #c9c9dd;
+            text-decoration: none;
+            &:hover{
+              color: #f3c258;
+              text-decoration: underline;
+            }
+            &>.icon-fans{
+              width: 24px;
+              height: 24px;
+              overflow: hidden;
+              vertical-align: middle;
+              display: inline-block;
+              background: url("../img/index.png") -137px -68px;
+            }
+            &>.icon-guard{
+              width: 24px;
+              height: 24px;
+              overflow: hidden;
+              vertical-align: middle;
+              display: inline-block;
+              background: url("../img/index.png") -136px -5px;
+            }
+            &>.icon-health{
+              width: 24px;
+              height: 24px;
+              overflow: hidden;
+              vertical-align: middle;
+              display: inline-block;
+              background: url("../img/index.png") -137px -36px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

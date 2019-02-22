@@ -1,0 +1,238 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+header {
+  background-color: #fff;
+  color: #464646;
+  border-bottom: 1px solid #c9c9c9;
+  border-top: 1px solid #c9c9c9;
+  width: 100%;
+  height: 40px;
+  position: relative;
+  z-index: 1111;
+}
+header > div:nth-child(1) {
+  width: 100%;
+  height: inherit;
+}
+header > div:nth-child(1) > div {
+  height: inherit;
+  display: flex;
+  width: 970px;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+header > div:nth-child(1) > div > .head_left {
+  display: flex;
+}
+header > div:nth-child(1) > div > .head_left > div:nth-child(1) {
+  position: relative;
+  z-index: 11112;
+  cursor: pointer;
+  width: 205px;
+  height: 40px;
+  padding-right: 15px;
+  background: url("../img/game-logo.png") no-repeat;
+  background-size: 100% 40px;
+}
+header > div:nth-child(1) > div > .head_left > div {
+  cursor: pointer;
+}
+header > div:nth-child(1) > div > .head_left > div:nth-child(2) {
+  position: relative;
+}
+header > div:nth-child(1) > div > .head_left > div:nth-child(2):hover > img:nth-child(2) {
+  display: block;
+}
+header > div:nth-child(1) > div > .head_left > div:nth-child(2) > img:nth-child(2) {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: -220px;
+  border-radius: 2px 2px 2px 2px;
+}
+header > div:nth-child(1) > div > .head_right {
+  display: flex;
+}
+header > div:nth-child(1) > div > .head_right > div:nth-child(1) {
+  width: 118px;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 40px;
+  display: flex;
+  align-items: center;
+}
+header > div:nth-child(1) > div > .head_right > div:nth-child(1):hover {
+  color: #ff4e00;
+}
+header > div:nth-child(1) > div > .head_right > div:nth-child(2) {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 40px;
+  cursor: pointer;
+}
+header > div:nth-child(1) > div > .head_right > div:nth-child(2):hover {
+  color: #ff4e00;
+}
+header > div:nth-child(1) > div > .head_right > div:nth-child(2):hover > i {
+  background: url("../img/ost-bg.png") -170px -134px;
+}
+header > div:nth-child(1) > div > .head_right > div:nth-child(2) > i {
+  display: inline-block;
+  width: 11px;
+  height: 11px;
+  margin-left: 5px;
+  background: url("../img/ost-bg.png") -150px -134px;
+}
+header > div:nth-child(2) {
+  width: 100%;
+  height: 84px;
+  background: rgba(0, 0, 0, 0.8);
+  position: relative;
+}
+header > div:nth-child(2) > .header_inner {
+  cursor: pointer;
+  position: relative;
+  width: 1200px;
+  height: inherit;
+  margin: 0 auto;
+  display: flex;
+  background: url("../img/logo.png") no-repeat left center;
+}
+header > div:nth-child(2) > .header_inner:hover + .header_list {
+  display: block;
+}
+header > div:nth-child(2) > .header_inner > nav {
+  display: flex;
+  padding-left: 230px;
+}
+header > div:nth-child(2) > .header_inner > nav > ul {
+  display: flex;
+}
+header > div:nth-child(2) > .header_inner > nav > ul > li {
+  text-align: center;
+}
+header > div:nth-child(2) > .header_inner > nav > ul > li:hover {
+  background: url("../img/index.png") no-repeat;
+}
+header > div:nth-child(2) > .header_inner > nav > ul > li > a {
+  text-decoration: none;
+  display: block;
+  width: 110px;
+  height: 64px;
+  padding: 20px 0 0;
+  color: #c9c9dd;
+  font-size: 18px;
+  line-height: 30px;
+}
+header > div:nth-child(2) > .header_inner > nav > ul > li > a:hover {
+  color: #e4b653;
+}
+header > div:nth-child(2) > .header_inner > nav > ul > li > a:hover > em {
+  color: #91763f;
+}
+header > div:nth-child(2) > .header_inner > nav > ul > li > a > em {
+  display: block;
+  padding-top: 5px;
+  font-size: 12px;
+  line-height: 16px;
+  color: #858792;
+  font-style: normal;
+}
+header > div:nth-child(2) > .header_inner > div {
+  margin-left: 15px;
+  display: flex;
+  align-items: center;
+}
+header > div:nth-child(2) > .header_inner > div > a {
+  margin-right: 7px;
+  width: 44px;
+  height: 44px;
+}
+header > div:nth-child(2) > .header_inner > div > a > img {
+  border: 1px solid #d9ad50;
+  border-radius: 42px;
+}
+header > div:nth-child(2) > .header_inner > div > div > a {
+  color: #ffffff;
+  font-size: 16px;
+  text-decoration: none;
+}
+header > div:nth-child(2) > .header_inner > div > div > p {
+  padding-top: 5px;
+  color: #858792;
+  font-size: 14px;
+}
+header > div:nth-child(2) > .header_list {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 84px;
+  width: 100%;
+  height: 240px;
+  padding-top: 15px;
+  padding-bottom: 30px;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 3;
+}
+header > div:nth-child(2) > .header_list:hover {
+  display: block;
+}
+header > div:nth-child(2) > .header_list > ul {
+  width: 970px;
+  height: 240px;
+  padding-left: 230px;
+  margin: 0 auto;
+  overflow: hidden;
+  zoom: 1;
+  display: flex;
+}
+header > div:nth-child(2) > .header_list > ul > li {
+  float: left;
+  display: inline;
+  width: 100px;
+  padding: 2px 5px 0;
+  text-align: center;
+  white-space: nowrap;
+}
+header > div:nth-child(2) > .header_list > ul > li > a {
+  height: 30px;
+  line-height: 30px;
+  display: block;
+  padding: 0;
+  font-size: 14px;
+  color: #c9c9dd;
+  text-decoration: none;
+}
+header > div:nth-child(2) > .header_list > ul > li > a:hover {
+  color: #f3c258;
+  text-decoration: underline;
+}
+header > div:nth-child(2) > .header_list > ul > li > a > .icon-fans {
+  width: 24px;
+  height: 24px;
+  overflow: hidden;
+  vertical-align: middle;
+  display: inline-block;
+  background: url("../img/index.png") -137px -68px;
+}
+header > div:nth-child(2) > .header_list > ul > li > a > .icon-guard {
+  width: 24px;
+  height: 24px;
+  overflow: hidden;
+  vertical-align: middle;
+  display: inline-block;
+  background: url("../img/index.png") -136px -5px;
+}
+header > div:nth-child(2) > .header_list > ul > li > a > .icon-health {
+  width: 24px;
+  height: 24px;
+  overflow: hidden;
+  vertical-align: middle;
+  display: inline-block;
+  background: url("../img/index.png") -137px -36px;
+}
+/*# sourceMappingURL=header.css.map */
